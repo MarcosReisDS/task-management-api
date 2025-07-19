@@ -43,7 +43,7 @@ docker compose up -d
 npm run migration:create
 
 # Rode as migrations
-npm run migration:run
+npm run migration:run -name=nome-da-tabela
 
 # Inicie a aplicação
 npm run start:dev
