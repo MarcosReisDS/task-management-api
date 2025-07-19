@@ -39,8 +39,11 @@ cp .env.example .env
 # Rode banco dados postgres no docker
 docker compose up -d
 
-# Rode as migrações (caso use Prisma)
-npx prisma migrate dev
+# Crie as migrations
+npm run migration:create
+
+# Rode as migrations
+npm run migration:run
 
 # Inicie a aplicação
 npm run start:dev
